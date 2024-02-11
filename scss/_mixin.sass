@@ -1,0 +1,16 @@
+@mixin font($fw: 400, $fz: 16px, $lh: normal, $color: $text-color)
+  font-family: $pr-font
+  font-weight: $fw
+  font-size: $fz
+  line-height: $lh
+  color: $color
+
+@mixin flex($dir: row, $align: center, $justify: space-between)
+  display: flex
+  flex-direction: $dir
+  align-items: $align
+  justify-content: $justify
+
+@mixin media($w)
+  @media (max-width: $w)
+    @content

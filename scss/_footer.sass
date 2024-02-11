@@ -1,0 +1,39 @@
+.footer
+  border-top: 1px solid $black
+  padding: 80px 0
+  background-color: #E6E6E6
+  &__row
+    @include flex()
+
+.footer-left
+
+  &__text
+    @include font(400, 20px, 28px, $gray)
+
+  &__input
+    margin-top: 10px
+    border: 1px solid $black
+    @include flex(row, center, center)
+    input
+      flex: 1
+      padding: 18px 24px
+      border: none
+      outline: none
+
+    button
+      background-color: $purple
+      padding: 18px 28px
+      border-left: 1px solid $black
+
+.footer-right
+
+  &__socials
+    @include flex(row, center, flex-end)
+    gap: 20px
+
+  &__social
+
+  &__copy
+    margin-top: 20px
+     @include font(400, 16px, 24px, $gray)
+     letter-spacing: -4%

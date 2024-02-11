@@ -1,0 +1,31 @@
+.navbar
+  // padding: 31px 0
+  border-bottom: 1px solid $black
+
+  &__row
+    @include flex()
+    padding-left: 230px
+
+  &__logo
+    width: 160px
+    height: 20px
+
+  &__right
+    @include flex(row, center, center)
+    gap: 36px
+
+  &__login
+    @include font(400, 22px, 30px)
+    letter-spacing: -4%
+    padding: 28px 41px
+    background-color: $purple
+    border-left: 1px solid $black
+
+  &-menu
+    @include flex(row, center, center)
+    gap: 32px
+    &__item
+
+    &__link
+      @include font(400, 22px, 30px)
+      letter-spacing: -4%
